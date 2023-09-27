@@ -1,0 +1,48 @@
+#190 
+apart = [ [101, 102], [201, 202], [301, 302] ]
+for i in range(len(apart)):
+    for j in range(len(apart[i])):
+        print("{0} 호 ".format(apart[i][j]))
+
+
+
+
+#300
+#try, except, else, finally
+per = ["10.31", "", "8.00"]
+try:
+    for i in per:
+        print(float(per))
+except TypeError as e:
+    print(e)
+else:
+    print("Everything is fine")
+finally:
+    print("Cleaning up...")
+
+
+
+
+
+class Animals():
+    def __init__(self, name, age, food):
+        self.name = name
+        self.age = age
+        self.food = food
+    def bark(self):
+        if self.age <3:
+            print("Wooh Wooh Wooh")
+        else:
+            print("WOOF WOOF WOOF")
+    
+    def mew(self):
+        if self.age <3:
+            print("mewww, mewww")
+        else:
+            print("MEWWW, MEWWW")
+
+dog = Animals("Rex", 5, "Meat")
+dog.bark()
+
+cat = Animals("Nany", 3, "Milk")
+cat.mew()
